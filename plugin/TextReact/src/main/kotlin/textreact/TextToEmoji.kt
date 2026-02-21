@@ -11,203 +11,151 @@ class TextToEmoji {
 
         private val reactions: ReactionsType = ReactionsType(
             single=mutableMapOf(
-                // A - Regional indicator, circled, squared, negative squared
+                // A - Emojis Discord valides en réaction
                 "a" to arrayListOf(
                     "\uD83C\uDDE6",  // 🇦 Regional indicator A
-                    "\uD83C\uDD70",  // 🅰 Negative squared A
-                    "Ⓐ",             // Circled A
-                    "🅰",             // Negative squared A (emoji)
-                    "🆎"              // AB button
+                    "\uD83C\uDD70",  // 🅰️ Negative squared Latin capital letter A
+                    "\uD83C\uDD8E"   // 🆎 AB button
                 ),
-                // B - Regional indicator, circled, squared, negative squared, B button
+                // B - Emojis Discord valides
                 "b" to arrayListOf(
                     "\uD83C\uDDE7",  // 🇧 Regional indicator B
-                    "\uD83C\uDD71",  // 🅱 Negative squared B
-                    "Ⓑ",             // Circled B
-                    "🅱"              // Negative squared B (emoji)
+                    "\uD83C\uDD71"   // 🅱️ Negative squared Latin capital letter B
                 ),
-                // C - Regional indicator, circled, copyright, squared
+                // C - Emojis Discord valides
                 "c" to arrayListOf(
                     "\uD83C\uDDE8",  // 🇨 Regional indicator C
-                    "©",             // Copyright
-                    "Ⓒ",             // Circled C
-                    "🅲"              // Squared C
+                    "\u00A9"         // ©️ Copyright
                 ),
-                // D - Regional indicator, circled, squared
+                // D - Emojis Discord valides
                 "d" to arrayListOf(
-                    "\uD83C\uDDE9",  // 🇩 Regional indicator D
-                    "Ⓓ",             // Circled D
-                    "🅳"              // Squared D
+                    "\uD83C\uDDE9"   // 🇩 Regional indicator D
                 ),
-                // E - Regional indicator, circled, email, musical
+                // E - Emojis Discord valides
                 "e" to arrayListOf(
                     "\uD83C\uDDEA",  // 🇪 Regional indicator E
                     "\uD83D\uDCE7",  // 📧 E-mail
-                    "🎼",            // Musical score
-                    "Ⓔ",             // Circled E
-                    "🅴"              // Squared E
+                    "\uD83C\uDFBC"   // 🎼 Musical score
                 ),
-                // F - Regional indicator, circled, squared
+                // F - Emojis Discord valides
                 "f" to arrayListOf(
-                    "\uD83C\uDDEB",  // 🇫 Regional indicator F
-                    "Ⓕ",             // Circled F
-                    "🅵"              // Squared F
+                    "\uD83C\uDDEB"   // 🇫 Regional indicator F
                 ),
-                // G - Regional indicator, circled, squared
+                // G - Emojis Discord valides
                 "g" to arrayListOf(
-                    "\uD83C\uDDEC",  // 🇬 Regional indicator G
-                    "Ⓖ",             // Circled G
-                    "🅶"              // Squared G
+                    "\uD83C\uDDEC"   // 🇬 Regional indicator G
                 ),
-                // H - Regional indicator, circled, squared, Pisces
+                // H - Emojis Discord valides
                 "h" to arrayListOf(
                     "\uD83C\uDDED",  // 🇭 Regional indicator H
-                    "♓",            // Pisces
-                    "Ⓗ",             // Circled H
-                    "🅷"              // Squared H
+                    "\u2653"         // ♓ Pisces
                 ),
-                // I - Regional indicator, circled, info, squared
+                // I - Emojis Discord valides
                 "i" to arrayListOf(
                     "\uD83C\uDDEE",  // 🇮 Regional indicator I
-                    "ℹ",             // Information
-                    "Ⓘ",             // Circled I
-                    "🅸"              // Squared I
+                    "\u2139"         // ℹ️ Information
                 ),
-                // J - Regional indicator, circled, squared
+                // J - Emojis Discord valides
                 "j" to arrayListOf(
-                    "\uD83C\uDDEF",  // 🇯 Regional indicator J
-                    "Ⓙ",             // Circled J
-                    "🅹"              // Squared J
+                    "\uD83C\uDDEF"   // 🇯 Regional indicator J
                 ),
-                // K - Regional indicator, circled, squared
+                // K - Emojis Discord valides
                 "k" to arrayListOf(
-                    "\uD83C\uDDF0",  // 🇰 Regional indicator K
-                    "Ⓚ",             // Circled K
-                    "🅺"              // Squared K
+                    "\uD83C\uDDF0"   // 🇰 Regional indicator K
                 ),
-                // L - Regional indicator, circled, squared
+                // L - Emojis Discord valides
                 "l" to arrayListOf(
-                    "\uD83C\uDDF1",  // 🇱 Regional indicator L
-                    "Ⓛ",             // Circled L
-                    "🅻"              // Squared L
+                    "\uD83C\uDDF1"   // 🇱 Regional indicator L
                 ),
-                // M - Regional indicator, circled, squared, zodiac signs
+                // M - Emojis Discord valides
                 "m" to arrayListOf(
                     "\uD83C\uDDF2",  // 🇲 Regional indicator M
-                    "Ⓜ",             // Circled M
-                    "♏",            // Scorpio
-                    "♍",            // Virgo
-                    "Ⓜ",             // Circled M (emoji)
-                    "🅼"              // Squared M
+                    "\u24C2",        // Ⓜ️ Circled M
+                    "\u264F",        // ♏ Scorpio
+                    "\u264D"         // ♍ Virgo
                 ),
-                // N - Regional indicator, circled, squared, Capricorn
+                // N - Emojis Discord valides
                 "n" to arrayListOf(
                     "\uD83C\uDDF3",  // 🇳 Regional indicator N
-                    "♑",            // Capricorn
-                    "Ⓝ",             // Circled N
-                    "🅽"              // Squared N
+                    "\u2651"         // ♑ Capricorn
                 ),
-                // O - Regional indicator, circled, squared, O button
+                // O - Emojis Discord valides
                 "o" to arrayListOf(
                     "\uD83C\uDDF4",  // 🇴 Regional indicator O
-                    "\uD83C\uDD7E",  // 🅾 O button
-                    "⭕",            // Hollow red circle
-                    "Ⓞ",             // Circled O
-                    "🅾"              // Squared O
+                    "\uD83C\uDD7E",  // 🅾️ Negative squared Latin capital letter O
+                    "\u2B55"         // ⭕ Hollow red circle
                 ),
-                // P - Regional indicator, circled, squared, P button
+                // P - Emojis Discord valides
                 "p" to arrayListOf(
                     "\uD83C\uDDF5",  // 🇵 Regional indicator P
-                    "\uD83C\uDD7F",  // 🅿 P button
-                    "Ⓟ",             // Circled P
-                    "🅿"              // Squared P
+                    "\uD83C\uDD7F"   // 🅿️ Negative squared Latin capital letter P
                 ),
-                // Q - Regional indicator, circled, squared
+                // Q - Emojis Discord valides
                 "q" to arrayListOf(
-                    "\uD83C\uDDF6",  // 🇶 Regional indicator Q
-                    "Ⓠ",             // Circled Q
-                    "🆀"              // Squared Q
+                    "\uD83C\uDDF6"   // 🇶 Regional indicator Q
                 ),
-                // R - Regional indicator, circled, squared, registered
+                // R - Emojis Discord valides
                 "r" to arrayListOf(
                     "\uD83C\uDDF7",  // 🇷 Regional indicator R
-                    "®",             // Registered
-                    "Ⓡ",             // Circled R
-                    "🆁"              // Squared R
+                    "\u00AE"         // ®️ Registered
                 ),
-                // S - Regional indicator, circled, squared
+                // S - Emojis Discord valides
                 "s" to arrayListOf(
-                    "\uD83C\uDDF8",  // 🇸 Regional indicator S
-                    "Ⓢ",             // Circled S
-                    "🆂"              // Squared S
+                    "\uD83C\uDDF8"   // 🇸 Regional indicator S
                 ),
-                // T - Regional indicator, circled, squared, cross
+                // T - Emojis Discord valides
                 "t" to arrayListOf(
                     "\uD83C\uDDF9",  // 🇹 Regional indicator T
-                    "✝",            // Latin cross
-                    "Ⓣ",             // Circled T
-                    "🆃"              // Squared T
+                    "\u271D"         // ✝️ Latin cross
                 ),
-                // U - Regional indicator, circled, squared
+                // U - Emojis Discord valides
                 "u" to arrayListOf(
-                    "\uD83C\uDDFA",  // 🇺 Regional indicator U
-                    "Ⓤ",             // Circled U
-                    "🆄"              // Squared U
+                    "\uD83C\uDDFA"   // 🇺 Regional indicator U
                 ),
-                // V - Regional indicator, circled, squared, Aries
+                // V - Emojis Discord valides
                 "v" to arrayListOf(
                     "\uD83C\uDDFB",  // 🇻 Regional indicator V
-                    "♈",            // Aries
-                    "Ⓥ",             // Circled V
-                    "🆅"              // Squared V
+                    "\u2648"         // ♈ Aries
                 ),
-                // W - Regional indicator, circled, squared
+                // W - Emojis Discord valides
                 "w" to arrayListOf(
-                    "\uD83C\uDDFC",  // 🇼 Regional indicator W
-                    "Ⓦ",             // Circled W
-                    "🆆"              // Squared W
+                    "\uD83C\uDDFC"   // 🇼 Regional indicator W
                 ),
-                // X - Regional indicator, circled, squared, crosses
+                // X - Emojis Discord valides
                 "x" to arrayListOf(
                     "\uD83C\uDDFD",  // 🇽 Regional indicator X
-                    "❎",            // Cross mark button
-                    "❌",            // Cross mark
-                    "✖",            // Multiply
-                    "Ⓧ",             // Circled X
-                    "🆇"              // Squared X
+                    "\u274E",        // ❎ Cross mark button
+                    "\u274C",        // ❌ Cross mark
+                    "\u2716"         // ✖️ Multiply
                 ),
-                // Y - Regional indicator, circled, squared
+                // Y - Emojis Discord valides
                 "y" to arrayListOf(
-                    "\uD83C\uDDFE",  // 🇾 Regional indicator Y
-                    "Ⓨ",             // Circled Y
-                    "🆈"              // Squared Y
+                    "\uD83C\uDDFE"   // 🇾 Regional indicator Y
                 ),
-                // Z - Regional indicator, circled, squared
+                // Z - Emojis Discord valides
                 "z" to arrayListOf(
-                    "\uD83C\uDDFF",  // 🇿 Regional indicator Z
-                    "Ⓩ",             // Circled Z
-                    "🆉"              // Squared Z
+                    "\uD83C\uDDFF"   // 🇿 Regional indicator Z
                 ),
-                // Numbers with keycap
-                "0" to arrayListOf("0️⃣", "⓪"),
-                "1" to arrayListOf("1️⃣", "①", "➀", "⓵"),
-                "2" to arrayListOf("2️⃣", "②", "➁", "⓶"),
-                "3" to arrayListOf("3️⃣", "③", "➂", "⓷"),
-                "4" to arrayListOf("4️⃣", "④", "➃", "⓸"),
-                "5" to arrayListOf("5️⃣", "⑤", "➄", "⓹"),
-                "6" to arrayListOf("6️⃣", "⑥", "➅", "⓺"),
-                "7" to arrayListOf("7️⃣", "⑦", "➆", "⓻"),
-                "8" to arrayListOf("8️⃣", "⑧", "➇", "⓼"),
-                "9" to arrayListOf("9️⃣", "⑨", "➈", "⓽"),
-                // Symbols
-                "?" to arrayListOf("❔", "❓", "⁉", "⁉️"),
-                "+" to arrayListOf("➕", "➕"),
-                "-" to arrayListOf("➖", "⛔", "\uD83D\uDCDB", "➖"),
-                "!" to arrayListOf("❕", "❗", "‼", "‼️"),
-                "*" to arrayListOf("*️⃣", "✳", "✴"),
-                "$" to arrayListOf("\uD83D\uDCB2", "💵", "💰"),
-                "#" to arrayListOf("#️⃣", "♯", "⋕"),
-                " " to arrayListOf("▪", "◾", "➖", "◼", "⬛", "⚫", "\uD83D\uDDA4", "\uD83D\uDD76", "⬜", "◽", "◻", "▫")
+                // Numbers - Emojis Discord valides (keycap)
+                "0" to arrayListOf("\u0030\uFE0F\u20E3"),  // 0️⃣
+                "1" to arrayListOf("\u0031\uFE0F\u20E3"),  // 1️⃣
+                "2" to arrayListOf("\u0032\uFE0F\u20E3"),  // 2️⃣
+                "3" to arrayListOf("\u0033\uFE0F\u20E3"),  // 3️⃣
+                "4" to arrayListOf("\u0034\uFE0F\u20E3"),  // 4️⃣
+                "5" to arrayListOf("\u0035\uFE0F\u20E3"),  // 5️⃣
+                "6" to arrayListOf("\u0036\uFE0F\u20E3"),  // 6️⃣
+                "7" to arrayListOf("\u0037\uFE0F\u20E3"),  // 7️⃣
+                "8" to arrayListOf("\u0038\uFE0F\u20E3"),  // 8️⃣
+                "9" to arrayListOf("\u0039\uFE0F\u20E3"),  // 9️⃣
+                // Symbols - Emojis Discord valides
+                "?" to arrayListOf("\u2754", "\u2753"),    // ❔ ❓
+                "+" to arrayListOf("\u2795"),               // ➕
+                "-" to arrayListOf("\u2796", "\u26D4", "\uD83D\uDCDB"),  // ➖ ⛔ 🚮
+                "!" to arrayListOf("\u2755", "\u2757"),    // ❕ ❗
+                "*" to arrayListOf("\u0023\uFE0F\u20E3", "\u2733", "\u2734"),  // *️⃣ ✳️ ✴️
+                "$" to arrayListOf("\uD83D\uDCB2", "\uD83D\uDCB5", "\uD83D\uDCB0"),  // 💲 💵 💰
+                "#" to arrayListOf("\u0023\uFE0F\u20E3"),  // #️⃣
+                " " to arrayListOf("\u25AA", "\u25FE", "\u2796", "\u25FC", "\u2B1B", "\u26AB", "\uD83D\uDDA4", "\uD83D\uDD76", "\u2B1C", "\u25FD", "\u25FB", "\u25AB")  // carrés noirs/blancs
             ),
             multiple=mutableMapOf(
                 "wc" to arrayListOf("\uD83D\uDEBE"),
